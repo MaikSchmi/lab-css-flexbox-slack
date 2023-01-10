@@ -267,6 +267,8 @@ body {
 /* SLACK RELIANCE SECTION */
 
 #slack-reliance {
+    display: flex;
+    flex-direction: column;
     padding: 40px 0 0 0;
     background-color: white;
     text-align: center;
@@ -383,6 +385,7 @@ footer img {
 
 .footer-quick-links {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     line-height: 50px;
