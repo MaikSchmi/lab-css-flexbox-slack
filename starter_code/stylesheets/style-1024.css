@@ -21,7 +21,7 @@ body {
     background-color: #F3EAE2;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
     /* NAV BAR */
 
@@ -57,10 +57,19 @@ body {
     /* HEADER */
 
     .header-class {
+        display: flex;
+        align-items: center;
+        background-image: url(../images/background-singup.png);
+        background-size: 120%;
         background-color: #540B51;
-        text-align: center;
+        background-repeat: no-repeat;
         color: white;
         font-weight: normal;
+    }
+
+    .header-class img:last-child {
+        height: 100%;
+        width: 100%;
     }
 
     .header-class h1 {
@@ -70,6 +79,7 @@ body {
     .header-class > div {
         display: flex;
         flex-direction: column;
+        padding-left: 20px;
     }
 
     .header-class a {
@@ -81,7 +91,7 @@ body {
     .header-buttons-ctn {
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        padding-bottom: 100px;
         gap: 15px;
     }
 
@@ -139,12 +149,12 @@ body {
     }
 
     #trusted-companies div img {
-        width: 20%;
+        width: 10%;
         margin: 5px;
     }
 
     #trusted-companies div img:nth-child(4){
-        width: 10%;
+        width: 6%;
     }
 
     #trusted-companies div img:nth-child(5){
@@ -161,32 +171,25 @@ body {
     #connectedness img {
         margin-top: 100px;
         width: 100%;
+        content: url(../images/connectedness.png);
     }
 
     #connectedness div h2 {
-        margin-left: 10px;
+        margin: 20px 200px;
     }
 
     #connectedness div p {
-        margin-left: 10px;
+        margin: 20px 200px;
+        line-height: 25px;
         font-weight: 500;
     }
 
     #connectedness div span {
-        margin-left: 10px;
+        margin-left: 200px;
     }
 
     #connectedness a {
         text-decoration: none;
-    }
-
-    #connectedness style {
-        border: solid blue;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
     }
 
     /* HOW YOU WANT TO WORK SECTION */
@@ -201,32 +204,25 @@ body {
         display: flex;
         align-self: flex-end;
         width: 100%;
+        content: url(../images/flexibility.png);
     }
 
     #how-to-work div h2 {
-        margin-left: 10px;
+        margin: 20px 200px;
     }
 
     #how-to-work div p {
-        margin-left: 10px;
+        margin: 20px 200px;
+        line-height: 25px;
         font-weight: 500;
     }
 
     #how-to-work div span {
-        margin-left: 10px;
+        margin: 20px 200px;
     }
 
     #how-to-work a {
         text-decoration: none;
-    }
-
-    #how-to-work style {
-        border: solid blue;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
     }
 
     /* MOVE FASTER SECTION */
@@ -238,32 +234,25 @@ body {
 
     #move-faster img {
         width: 100%;
+        content: url(../images/speed.png);
     }
 
     #move-faster div h2 {
-        margin-left: 10px;
+        margin: 20px 200px;
     }
 
     #move-faster div p {
-        margin-left: 10px;
+        margin: 20px 200px;
+        line-height: 25px;
         font-weight: 500;
     }
 
     #move-faster div span {
-        margin-left: 10px;
+        margin: 20px 200px;
     }
 
     #move-faster a {
         text-decoration: none;
-    }
-
-    #move-faster style {
-        border: solid blue;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
     }
 
     /* SLACK RELIANCE SECTION */
@@ -286,7 +275,6 @@ body {
 
     .reliance-button-ctn {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         gap: 15px;
     }
@@ -302,15 +290,19 @@ body {
     .reliance-button-enterprise {
         background-color: #540B51;
         color: white;
+        padding: 10px 75px;
     }
 
     .reliance-button-sales {
+        color:#540B51;
+        font-weight: bold;
         background-color: white;
+        padding: 10px 75px;
     }
 
     #slack-reliance ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 0 40px;
@@ -350,7 +342,7 @@ body {
 
     .new-digital-hq-button-ctn {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-around;
         margin: 0 50px;
         gap: 10px;
@@ -402,7 +394,10 @@ body {
     }
 
     .footer-other-links {
+        display: flex;
+        justify-content: space-between;
         line-height: 50px;
+        margin: 0 20px;
     }
 
     .footer-other-links li {
@@ -415,9 +410,10 @@ body {
 
     .footer-icons {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin: 20px;
         padding: 50px 0;
+        gap: 75px;
     }
 
     footer div:last-child {
