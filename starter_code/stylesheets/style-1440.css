@@ -21,7 +21,7 @@ body {
     background-color: #F3EAE2;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
 
     /* NAV BAR */
 
@@ -29,6 +29,16 @@ body {
         display: flex;
         justify-content: space-between;
         background-color: #540B51;
+    }
+
+    .nav-bar div:first-child {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-bar div ul:first-child {
+        visibility: visible;
     }
 
     .nav-bar > div > img {
@@ -54,18 +64,48 @@ body {
         padding: 10px;
     }
 
-    .nav-bar-links {
+    .button-icon-menu {
         display: none;
     }
 
+    .nav-bar-links {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        font-weight: bold;
+    }
+
+    .nav-bar-links li a {
+        color: white;
+        text-decoration: none;
+    }
+
     .nav-bar-sign-in {
-        display: none;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .nav-bar-sign-in li:first-child a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    .nav-bar-sign-in li:last-child a {
+        color:#540B51;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: white;
+        padding: 10px 15px;
     }
 
     /* HEADER */
 
     .header-class {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         background-image: url(../images/background-singup.png);
         background-size: 120%;
@@ -76,18 +116,24 @@ body {
     }
 
     .header-class img:last-child {
-        height: 100%;
-        width: 100%;
+        height: 130%;
+        width: 130%;
+        align-self: flex-end;
     }
 
     .header-class h1 {
-        font-size: 78px;
+        font-size: 88px;
     }
 
     .header-class > div {
         display: flex;
         flex-direction: column;
-        padding-left: 20px;
+        padding-left: 60px;
+        margin-right: 130px;
+    }
+
+    .header-class p {
+        font-size: 30px;
     }
 
     .header-class a {
@@ -145,6 +191,7 @@ body {
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
+        font-size: 20px;
         margin: 0;
         padding: 40px 0;
     }
@@ -172,6 +219,9 @@ body {
     /* CONNECTEDNESS SECTION */
 
     #connectedness {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #F3EAE2;
         padding: 0 0 100px 0;
     }
@@ -183,17 +233,19 @@ body {
     }
 
     #connectedness div h2 {
-        margin: 20px 200px;
+        margin: 20px 100px;
+        font-size: 40px;
     }
 
     #connectedness div p {
-        margin: 20px 200px;
+        margin: 20px 100px;
+        font-size: 18px;
         line-height: 25px;
         font-weight: 500;
     }
 
     #connectedness div span {
-        margin-left: 200px;
+        margin-left: 100px;
     }
 
     #connectedness a {
@@ -203,6 +255,10 @@ body {
     /* HOW YOU WANT TO WORK SECTION */
 
     #how-to-work {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
         background-color: #F3EAE2;
         margin: 0;
         padding: 0 0 100px 0;
@@ -216,17 +272,19 @@ body {
     }
 
     #how-to-work div h2 {
-        margin: 20px 200px;
+        margin: 20px 100px;
+        font-size: 40px;
     }
 
     #how-to-work div p {
-        margin: 20px 200px;
+        margin: 20px 100px;
         line-height: 25px;
+        font-size: 18px;
         font-weight: 500;
     }
 
     #how-to-work div span {
-        margin: 20px 200px;
+        margin: 20px 100px;
     }
 
     #how-to-work a {
@@ -236,6 +294,9 @@ body {
     /* MOVE FASTER SECTION */
 
     #move-faster {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #F3EAE2;
         padding: 0 0 100px 0;
     }
@@ -246,17 +307,18 @@ body {
     }
 
     #move-faster div h2 {
-        margin: 20px 200px;
+        margin: 20px 100px;
+        font-size: 40px;
     }
 
     #move-faster div p {
-        margin: 20px 200px;
+        margin: 20px 100px;
         line-height: 25px;
         font-weight: 500;
     }
 
     #move-faster div span {
-        margin: 20px 200px;
+        margin: 20px 100px;
     }
 
     #move-faster a {
@@ -274,21 +336,15 @@ body {
     }
 
     #slack-reliance h3 {
-        font-size: 26px;
+        font-size: 40px;
     }
 
     #slack-reliance p {
         font-weight: 500;
     }
 
-    .reliance-button-ctn {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
     .reliance-button-ctn button {
-        margin: 0 50px;
+        margin: 0 8px;
         height: 50px;
         text-transform: uppercase;
         letter-spacing: 1.5px;
@@ -320,11 +376,12 @@ body {
     #slack-reliance span {
         color:#540B51;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 60px;
     }
 
     #slack-reliance ul li p:nth-child(2) {
         font-weight: bold;
+        margin: 0 120px;
     }
 
     #slack-reliance div:last-child {
@@ -350,14 +407,15 @@ body {
 
     .new-digital-hq-button-ctn {
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
+        flex-direction: row-reverse;
+        justify-content: center;
         margin: 0 50px;
         gap: 10px;
     }
 
     .new-digital-hq-button-ctn button {
         height: 60px;
+        width: 300px;
         text-transform: uppercase;
         letter-spacing: 1.5px;
         font-weight: bold;
@@ -391,6 +449,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         line-height: 50px;
+        margin-right: 60px;
     }
 
     footer ul {
@@ -405,7 +464,7 @@ body {
         display: flex;
         justify-content: space-between;
         line-height: 50px;
-        margin: 0 20px;
+        margin-right: 60px;
     }
 
     .footer-other-links li {
@@ -419,7 +478,7 @@ body {
     .footer-icons {
         display: flex;
         justify-content: flex-start;
-        margin: 20px;
+        margin-left: 45px;
         padding: 50px 0;
         gap: 75px;
     }

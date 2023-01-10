@@ -54,6 +54,14 @@ body {
         padding: 10px;
     }
 
+    .nav-bar-links {
+        display: none;
+    }
+
+    .nav-bar-sign-in {
+        display: none;
+    }
+
     /* HEADER */
 
     .header-class {
