@@ -168,7 +168,7 @@ body {
 
     #connectedness img {
         margin-top: 100px;
-        width: 100%;
+        width: 90%;
     }
 
     #connectedness div h2 {
@@ -206,9 +206,9 @@ body {
     }
 
     #how-to-work img {
-        display: flex;
-        align-self: flex-end;
-        width: 100%;
+        display: block;
+        margin-left: auto;
+        width: 90%;
     }
 
     #how-to-work div h2 {
@@ -245,7 +245,7 @@ body {
     }
 
     #move-faster img {
-        width: 100%;
+        width: 90%;
     }
 
     #move-faster div h2 {

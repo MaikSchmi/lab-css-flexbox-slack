@@ -178,7 +178,7 @@ body {
 
     #connectedness img {
         margin-top: 100px;
-        width: 100%;
+        width: 90%;
         content: url(../images/connectedness.png);
     }
 
@@ -209,9 +209,9 @@ body {
     }
 
     #how-to-work img {
-        display: flex;
-        align-self: flex-end;
-        width: 100%;
+        display: block;
+        margin-left: auto;
+        width: 90%;
         content: url(../images/flexibility.png);
     }
 
@@ -241,7 +241,7 @@ body {
     }
 
     #move-faster img {
-        width: 100%;
+        width: 90%;
         content: url(../images/speed.png);
     }
 
